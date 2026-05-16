@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leck King (Lucas) Ting — Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Progress bar -->
+  <div id="progress"></div>
+
+  <!-- ── Nav ──────────────────────────────────────────────────────────── -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Lucas</a>
+      <ul class="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1"  x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22"  x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1"  y1="12" x2="3"  y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+      <a href="#contact" class="btn-contact">Contact Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#experience"  class="mobile-link">Experience</a>
+    <a href="#skills"      class="mobile-link">Skills</a>
+    <a href="#education"   class="mobile-link">Education</a>
+    <a href="projects.html" class="mobile-link">Projects</a>
+    <a href="#contact"     class="mobile-link">Contact Me</a>
+  </div>
+
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="avatar-wrap">
+          <div class="avatar">
+            <!-- Replace this SVG with an <img src="avatar.jpg"> tag -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+        </div>
+        <div class="hero-text">
+          <div class="hero-tag">Open to opportunities</div>
+          <h1 class="hero-name">Leck King (Lucas) Ting</h1>
+          <p class="hero-summary">
+            Data Engineer with a software engineering background. Skilled in Python and SQL, specializing in scalable end-to-end ETL/ELT pipelines that transform raw data into actionable insights. Passionate about data, continuous learning, and improving data systems through modern technologies and best practices.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn-primary">Get in Touch</a>
+            <a href="#experience" class="btn-secondary">View My Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Experience ───────────────────────────────────────────────────── -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-date">Jun 2023 — Present</div>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <span class="timeline-role">Data Engineer I</span>
+              <span class="timeline-company">@ AirAsia</span>
+            </div>
+            <p class="timeline-desc">
+              Building and maintaining scalable data infrastructure on GCP to support data-driven decision making across the organisation.
+            </p>
+            <div class="metrics">
+              <span class="metric">Python</span>
+              <span class="metric">SQL</span>
+              <span class="metric">GCP</span>
+              <span class="metric">BigQuery</span>
+              <span class="metric">Airflow</span>
+              <span class="metric">GitLab</span>
+              <span class="metric">Terraform</span>
+              <span class="metric">Gemini AI</span>
+            </div>
+            <ul class="achievements">
+              <li>Developed scalable ETL/ELT pipelines and extracted data from multiple heterogeneous data sources.</li>
+              <li>Built and optimised BigQuery data warehouses to support analytics and reporting needs.</li>
+              <li>Automated workflows using Airflow, enabling reliable, repeatable, and scheduled data processes.</li>
+              <li>Managed GCP data infrastructure as code with Terraform.</li>
+              <li>Integrated Generative AI and LLM (Gemini) into projects to enhance data processing and automation.</li>
+              <li>Created reusable and configurable custom pipelines to reduce code redundancy across teams.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Apr 2022 — Jun 2023</div>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <span class="timeline-role">Data Engineer</span>
+              <span class="timeline-company">@ GBG Malaysia</span>
+            </div>
+            <p class="timeline-desc">
+              Improved data quality and resolved production issues for a global location intelligence platform.
+            </p>
+            <div class="metrics">
+              <span class="metric">ETL Tools</span>
+              <span class="metric">Location Intelligence</span>
+            </div>
+            <ul class="achievements">
+              <li>Enhanced data quality through internal ETL tools by researching, transforming, mapping, and analysing raw data.</li>
+              <li>Supported and resolved production issues related to location data accuracy and completeness.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Jan 2019 — Dec 2020</div>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <span class="timeline-role">Application Engineer</span>
+              <span class="timeline-company">@ Hitachi eBworx Sdn Bhd</span>
+            </div>
+            <p class="timeline-desc">
+              Contributed to the development and testing of digital transaction banking applications for financial institutions.
+            </p>
+            <div class="metrics">
+              <span class="metric">Banking Applications</span>
+              <span class="metric">VSIT · SIT · UAT</span>
+            </div>
+            <ul class="achievements">
+              <li>Worked on digital transaction banking applications across full development lifecycle.</li>
+              <li>Involved in development, VSIT, SIT, and UAT phases.</li>
+              <li>Developed, debugged, and fixed bugs based on business requirements.</li>
+              <li>Supported stakeholders during system application testing.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ────────────────────────────────────────────────────────── -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <div class="skill-group-title">Programming</div>
+          <div class="badges">
+            <span class="badge">Python</span>
+            <span class="badge">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">Data Engineering</div>
+          <div class="badges">
+            <span class="badge">ETL / ELT</span>
+            <span class="badge">BigQuery</span>
+            <span class="badge">Apache Airflow</span>
+            <span class="badge">Cloud Composer</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">Google Cloud Platform</div>
+          <div class="badges">
+            <span class="badge">Cloud Storage</span>
+            <span class="badge">Cloud Run</span>
+            <span class="badge">Cloud SQL</span>
+            <span class="badge">Artifact Registry</span>
+            <span class="badge">IAM</span>
+            <span class="badge">Service Account</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">DevOps & Tools</div>
+          <div class="badges">
+            <span class="badge">Terraform</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Git</span>
+            <span class="badge">Gemini AI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Education ─────────────────────────────────────────────────────── -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+          </div>
+          <div class="edu-degree">MSc in Data Science & Business Analytics</div>
+          <div class="edu-school">Asia Pacific University</div>
+          <div class="edu-year">2021 — 2022 · GPA 3.66</div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+          </div>
+          <div class="edu-degree">B.Sc. (Hons) Computer Science — Software Engineering</div>
+          <div class="edu-school">INTI International University</div>
+          <div class="edu-year">2017 — 2019 · GPA 3.51</div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <div class="edu-degree">Diploma in ICT</div>
+          <div class="edu-school">INTI International University</div>
+          <div class="edu-year">2014 — 2016 · GPA 3.53</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ───────────────────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <h2 class="contact-heading">Let's build something<br><span class="accent">great together.</span></h2>
+        <p class="contact-sub">Whether it's a job opportunity, a collaboration, or just a conversation — my inbox is always open.</p>
+        <a href="mailto:leck_king@hotmail.com" class="contact-email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+          leck_king@hotmail.com
+        </a>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/lucasmrting/" target="_blank" rel="noopener" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <span class="accent">Leck King (Lucas) Ting</span> · 2026
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
