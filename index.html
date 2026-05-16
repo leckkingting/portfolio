@@ -22,7 +22,8 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#project">Projects</a></li>
       </ul>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -49,11 +50,12 @@
 
   <!-- Mobile drawer -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#experience"  class="mobile-link">Experience</a>
-    <a href="#skills"      class="mobile-link">Skills</a>
-    <a href="#education"   class="mobile-link">Education</a>
-    <a href="projects.html" class="mobile-link">Projects</a>
-    <a href="#contact"     class="mobile-link">Contact Me</a>
+    <a href="#experience"      class="mobile-link">Experience</a>
+    <a href="#skills"          class="mobile-link">Skills</a>
+    <a href="#education"       class="mobile-link">Education</a>
+    <a href="#certifications"  class="mobile-link">Certifications</a>
+    <a href="#project"         class="mobile-link">Projects</a>
+    <a href="#contact"         class="mobile-link">Contact Me</a>
   </div>
 
   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
@@ -63,10 +65,7 @@
         <div class="avatar-wrap">
           <div class="avatar">
             <!-- Replace this SVG with an <img src="avatar.jpg"> tag -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-              <circle cx="12" cy="7" r="4"/>
-            </svg>
+             <img src="img/profile_logo.jpg">
           </div>
         </div>
         <div class="hero-text">
@@ -93,9 +92,12 @@
         <div class="timeline-item">
           <div class="timeline-date">Jun 2023 — Present</div>
           <div class="timeline-body">
+            
             <div class="timeline-header">
+              <img class="company-logo" src="img/airasia_logo.jpg" alt="AirAsia logo" />
               <span class="timeline-role">Data Engineer I</span>
               <span class="timeline-company">@ AirAsia</span>
+              
             </div>
             <p class="timeline-desc">
               Building and maintaining scalable data infrastructure on GCP to support data-driven decision making across the organisation.
@@ -125,6 +127,7 @@
           <div class="timeline-date">Apr 2022 — Jun 2023</div>
           <div class="timeline-body">
             <div class="timeline-header">
+              <img class="company-logo" src="img/gb_group_logo.jpg" alt="GBG Malaysia logo" />
               <span class="timeline-role">Data Engineer</span>
               <span class="timeline-company">@ GBG Malaysia</span>
             </div>
@@ -146,6 +149,7 @@
           <div class="timeline-date">Jan 2019 — Dec 2020</div>
           <div class="timeline-body">
             <div class="timeline-header">
+              <img class="company-logo" src="img/hitachi_ebworx_logo.jpg" alt="Hitachi eBworx logo" />
               <span class="timeline-role">Application Engineer</span>
               <span class="timeline-company">@ Hitachi eBworx Sdn Bhd</span>
             </div>
@@ -202,6 +206,7 @@
             <span class="badge">Artifact Registry</span>
             <span class="badge">IAM</span>
             <span class="badge">Service Account</span>
+            <span class="badge">Cloud Composer</span>
           </div>
         </div>
 
@@ -212,6 +217,7 @@
             <span class="badge">Docker</span>
             <span class="badge">Git</span>
             <span class="badge">Gemini AI</span>
+            <span class="badge">Claude Code</span>
           </div>
         </div>
 
@@ -265,19 +271,121 @@
     </div>
   </section>
 
+  <!-- ── Certifications ──────────────────────────────────────────────── -->
+  <section id="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-grid">
+
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="8" r="6"/>
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+          </div>
+          <div class="cert-name">Google Associate Cloud Engineer</div>
+          <div class="cert-issuer">Google Cloud</div>
+          <div class="cert-meta">Issued May 2025 · Expires May 2028</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="8" r="6"/>
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+          </div>
+          <div class="cert-name">Terraform Associate</div>
+          <div class="cert-issuer">HashiCorp</div>
+          <div class="cert-meta">Issued Sep 2024 · Expires Sep 2026</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="8" r="6"/>
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+          </div>
+          <div class="cert-name">ITIL® 4 Foundation</div>
+          <div class="cert-issuer">AXELOS</div>
+          <div class="cert-meta">Issued Nov 2023 · Expires Nov 2026</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="project">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card" data-id="p1">
+          <div class="project-title">Scalable ETL/ELT Pipeline Framework</div>
+          <p class="project-excerpt">
+            A reusable and configurable pipeline framework that standardises how raw data is ingested, transformed, and loaded across multiple data sources.
+          </p>
+          <span class="card-more">View details →</span>
+        </div>
+
+        <div class="project-card" data-id="p2">
+          <div class="project-title">BigQuery Data Warehouse</div>
+          <p class="project-excerpt">
+            Designed and optimised a centralised BigQuery data warehouse to consolidate data from multiple sources for analytics and reporting.
+          </p>
+          <span class="card-more">View details →</span>
+        </div>
+
+      </div>
+
+      <!-- Hidden detail data -->
+      <div id="p1-data" hidden>
+        <div class="detail-title">Scalable ETL/ELT Pipeline Framework</div>
+        <p class="detail-desc">
+          A reusable and configurable pipeline framework that standardises how raw data is ingested, transformed, and loaded across multiple data sources. Reduces code redundancy and onboarding time for new pipelines.
+        </p>
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">BigQuery</span>
+          <span class="badge">Cloud Storage</span>
+          <span class="badge">Cloud Run</span>
+        </div>
+      </div>
+
+      <div id="p2-data" hidden>
+        <div class="detail-title">BigQuery Data Warehouse</div>
+        <p class="detail-desc">
+          Designed and optimised a centralised BigQuery data warehouse to consolidate data from multiple sources for analytics and reporting. Includes partitioning, clustering, and cost optimisation strategies.
+        </p>
+        <div class="badges">
+          <span class="badge">BigQuery</span>
+          <span class="badge">SQL</span>
+          <span class="badge">Cloud Storage</span>
+          <span class="badge">Python</span>
+        </div>
+      </div>
+
+      <!-- Detail panel -->
+      <div id="project-detail-panel" class="project-detail-panel">
+        <button class="detail-close" id="detailClose" aria-label="Close">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+        <div id="detail-body"></div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ── Contact ───────────────────────────────────────────────────────── -->
   <section id="contact">
     <div class="container">
       <div class="contact-inner">
         <h2 class="contact-heading">Let's build something<br><span class="accent">great together.</span></h2>
         <p class="contact-sub">Whether it's a job opportunity, a collaboration, or just a conversation — my inbox is always open.</p>
-        <a href="mailto:leck_king@hotmail.com" class="contact-email">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="2" y="4" width="20" height="16" rx="2"/>
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-          </svg>
-          leck_king@hotmail.com
-        </a>
         <div class="social-links">
           <a href="https://www.linkedin.com/in/lucasmrting/" target="_blank" rel="noopener" class="social-link">
             <svg viewBox="0 0 24 24" fill="currentColor">
@@ -286,10 +394,19 @@
             </svg>
             LinkedIn
           </a>
+          <a href="mailto:leck_king@hotmail.com" target="_blank" rel="noopener" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+            Email
+          </a>
         </div>
       </div>
     </div>
   </section>
+
+  
 
   <!-- ── Footer ────────────────────────────────────────────────────────── -->
   <footer>

@@ -48,10 +48,41 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.timeline-item, .skill-group, .edu-card, .project-card').forEach((el, i) => {
+document.querySelectorAll('.timeline-item, .skill-group, .edu-card, .cert-card, .project-card').forEach((el, i) => {
   el.style.transitionDelay = (i % 4) * 80 + 'ms';
   observer.observe(el);
 });
+
+// Project detail panel
+const detailPanel = document.getElementById('project-detail-panel');
+if (detailPanel) {
+  const detailBody  = document.getElementById('detail-body');
+  const detailClose = document.getElementById('detailClose');
+  const cards = document.querySelectorAll('.project-card[data-id]');
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const data = document.getElementById(card.dataset.id + '-data');
+
+      if (card.classList.contains('active')) {
+        card.classList.remove('active');
+        detailPanel.classList.remove('open');
+        return;
+      }
+
+      cards.forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+      detailBody.innerHTML = data.innerHTML;
+      detailPanel.classList.add('open');
+      detailPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  });
+
+  detailClose.addEventListener('click', () => {
+    detailPanel.classList.remove('open');
+    document.querySelectorAll('.project-card').forEach(c => c.classList.remove('active'));
+  });
+}
 
 // Active nav link highlight on scroll
 const sections = document.querySelectorAll('section[id]');
